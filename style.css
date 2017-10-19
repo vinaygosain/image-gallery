@@ -1,0 +1,57 @@
+
+body, figure { 
+  margin: 0; 
+}
+.maindiv{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+/*  
+ div#captioned-gallery { 
+  width:900px;
+  height:900px;
+  overflow:hidden;  So the sliding bit doesn't stick out. 
+  margin:0 auto;
+} 
+
+.slider {
+    display: inline-flex; 
+    transition: 1s ease-in-out;
+}
+*/
+ #leftclick, #rightclick {
+    font-size: 100px;
+    align-self: center;
+    cursor: pointer;
+} 
+/*
+padding:0;
+  margin:0;
+  float:left;   */
+
+
+div#captioned-gallery {
+  width:450px;
+  height:200px;
+  overflow:hidden; /* So the sliding bit doesn't stick out. */
+  margin:20px;
+  box-shadow: 0px 5px 10px 2px rgba(0,0,0,0.5)
+}
+#slide1_images {
+  /* This is the bit that moves. It has 4 images, so 4 * 450 = 1800. You could use javascript
+  to work this out instead by counting images. */
+  width:1800px;
+
+  -webkit-transition:all 1.0s ease-in-out;
+  -moz-transition:all 1.0s ease-in-out;
+  -o-transition:all 1.0s ease-in-out;
+  transition:all 1.0ms ease-in-out;
+}
+#slide1_images img {
+  padding:0;
+  margin:0;
+  float:left; /* All the images are in a row next to each other. */
+}
